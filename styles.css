@@ -1,0 +1,35 @@
+
+
+.home{
+    background-color: greenyellow;
+}
+
+.about{
+    background-color: greenyellow;
+}
+
+.blog{
+    background-color: greenyellow;
+}
+
+.contact{
+    background-color: greenyellow;
+    
+}
+body{
+    background: white;
+    text-align: center;
+    
+   
+}
+ul{ display: flex; line-height: 80px;  }
+
+li{
+    list-style: none;
+    margin-left: 200px;
+    
+}
+
+a{
+    text-decoration:none;
+}

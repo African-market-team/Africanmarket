@@ -1,2 +1,2 @@
-alert ("hello, world");
-prompt("Hello, World!")
+// alert ("hello, world");
+// prompt("Hello, World!")
