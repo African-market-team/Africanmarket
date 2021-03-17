@@ -1,56 +1,163 @@
-
-
-.home{
-    background-color: greenyellow;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-.about{
-    background-color: greenyellow;
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.blog{
-    background-color: greenyellow;
+.home {
+  background-color: rgb(241, 239, 241);
+
+  display: flex;
+  width: 80%;
+  margin: auto;
 }
 
-.contact{
-    background-color: greenyellow;
-    
-}
-body{
-    background: white;
-    text-align: center;
-    
-   
-}
-ul{ display: flex; line-height: 80px;  }
-
-li{
-    list-style: none;
-    margin-left: 200px;
-    
+.about {
+  background-color: rgb(241, 239, 241);
+  display: flex;
+  width: 80%;
+  margin: auto;
 }
 
-a{
-    text-decoration:none;
+.blog {
+  background-color: rgb(241, 239, 241);
+  display: flex;
+  width: 80%;
+  margin: auto;
 }
 
-.nav-Title{
-    background-color: #f3f3f3;
-    display: block;
-    padding: 30px 15px;
+.contact {
+  background-color: rgb(241, 239, 241);
+  display: flex;
+  width: 80%;
+  margin: auto;
+}
+body {
+  background: white;
+  text-align: center;
+}
+ul {
+  display: flex;
+  padding: 1.2%;
 }
 
-.nav-title h2{
-    display:inline;
-    font-size: 25px;
+li {
+  list-style: none;
+  margin-left: 200px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-Title {
+  background-color: #f3f3f3;
+  display: block;
+  padding: 30px 15px;
+}
+
+.nav-title h2 {
+  display: inline;
+  font-size: 25px;
 }
 
 /* contact form css */
+.showCase {
+  position: relative;
+}
 
-body {font-family: Arial, Helvetica, sans-serif;}
-* {box-sizing: border-box;}
+.arrow {
+  position: absolute;
+  font-size: 40px;
+  color: green;
+  font-weight: 500;
+  top: 50%;
+  margin: 30px;
+  cursor: pointer;
+}
+#rightArrow {
+  right: 0;
+}
 
-input[type=text], select, textarea {
+.hero-img {
+  width: 100%;
+}
+
+.hore-text {
+  position: absolute;
+  width: 80%;
+  margin-left: 10%;
+  height: 83.5vh;
+  background: rgba(0, 0, 0, 0.192);
+}
+.boldtext {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  width: 30%;
+  color: whitesmoke;
+  font-size: 259%;
+  background-color: rgba(0, 0, 0, 0.198);
+}
+
+.discription {
+  color: white;
+  margin-top: 30rem;
+  width: 30%;
+  margin-left: 29rem;
+  line-height: 3rem;
+  text-align: justify;
+}
+.btn {
+  background-color: rgba(0, 0, 0, 0.883);
+  border: none;
+  outline: none;
+  padding: 15px;
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+  margin-right: 15rem;
+}
+.btn:hover {
+  background: rgba(253, 70, 70, 0.733);
+  cursor: pointer;
+  color: cyan;
+}
+
+.section {
+  display: flex;
+  width: 80%;
+  margin: auto;
+}
+
+.contactus {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  background-color: rgb(241, 239, 241);
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+}
+.contacttext h3 {
+  border-bottom: 3px solid black;
+  padding: 10px;
+}
+.contacttext {
+  width: 50%;
+  margin-left: 11rem;
+  padding: 15px;
+}
+
+input[type="text"],
+select,
+textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -61,7 +168,7 @@ input[type=text], select, textarea {
   resize: vertical;
 }
 
-input[type=submit] {
+input[type="submit"] {
   background-color: #e84a34;
   color: white;
   padding: 12px 20px;
@@ -70,7 +177,7 @@ input[type=submit] {
   cursor: pointer;
 }
 
-input[type=submit]:hover {
+input[type="submit"]:hover {
   background-color: #e84a34;
 }
 
@@ -78,4 +185,199 @@ input[type=submit]:hover {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
+}
+
+/* about us */
+
+.content {
+  width: 100%;
+  margin-top: 7rem;
+  position: relative;
+}
+
+.story-title {
+  font-size: 16px;
+
+  border-bottom: 3px solid red;
+  display: inline;
+}
+
+.text-container {
+  text-align: justify;
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+  line-height: 2rem;
+}
+
+.redtext {
+  color: rgb(215, 84, 64);
+  font-size: 20px;
+  font-weight: 300;
+}
+.lightblue {
+  color: rgb(84, 144, 178);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.ourmission {
+  font-weight: 300;
+
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+
+  display: flex;
+}
+
+.text-boxi-one {
+  text-align: center;
+  width: 60%;
+  margin: auto;
+  padding: 10px;
+  font-size: 1.5rem;
+}
+.text-p {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  text-align: justify;
+}
+
+.wrap {
+  background: rgb(34, 64, 80);
+  padding: 5rem;
+  /* display: flex; */
+  width: 100%;
+}
+
+.ourmission p {
+  text-align: justify;
+  width: 50%;
+}
+
+.ourmission a {
+  display: flex;
+  padding: 10px;
+  border-radius: 1.5px;
+  width: 10%;
+  background-color: white;
+
+  cursor: pointer;
+  margin: auto;
+  color: rgb(215, 84, 64);
+}
+
+.containerAprroach {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.ourApproach {
+  width: 100%;
+  margin-top: 5rem;
+}
+.aprroach {
+  width: 70%;
+  margin: auto;
+  line-height: 2rem;
+  font-size: 1.2rem;
+}
+.aprroach p {
+  margin-top: 2rem;
+  text-align: justify;
+}
+
+.arrow {
+  color: #000;
+}
+
+/* home-page css */
+.ourservicr {
+  margin-top: 5rem;
+}
+
+.text-box {
+  display: flex;
+  position: relative;
+  width: 80%;
+  margin: auto;
+  justify-content: space-between;
+  text-align: justify;
+}
+
+.resaerch {
+  width: 30%;
+  line-height: 1.7rem;
+}
+
+.data-dreven {
+  width: 30%;
+  line-height: 1.7rem;
+}
+.discover {
+  width: 30%;
+  line-height: 1.7rem;
+}
+
+.data-dreven h2,
+.resaerch h2,
+.discover h2 {
+  color: red;
+
+  text-align: center;
+  margin: 20px;
+}
+
+/* blog page */
+
+.blog-container img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: bottom right;
+}
+
+.blogs-showcase {
+  position: relative;
+}
+
+.news {
+  position: absolute;
+  top: 50%;
+  left: 13%;
+  color: rgba(255, 0, 0, 0.52);
+}
+
+.news span {
+  display: inline;
+  border-bottom: 2px solid red;
+}
+
+.section-blog-container {
+  display: flex;
+  width: 80%;
+  margin: auto;
+}
+
+.blogs {
+  padding: 3rem;
+}
+
+.blogs img {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.blogs .headline {
+  margin-top: 1.9rem;
+}
+
+.blogs p {
+  margin-top: 2rem;
+  width: 100%;
+  text-align: justify;
 }
