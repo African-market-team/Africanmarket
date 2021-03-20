@@ -7,7 +7,7 @@
 body {
   font-family: "Roboto", sans-serif;
 }
-
+/*
 .home {
   background-color: rgb(241, 239, 241);
 
@@ -15,7 +15,7 @@ body {
   width: 80%;
   margin: auto;
 }
-
+*/
 .about {
   background-color: rgb(241, 239, 241);
   display: flex;
@@ -40,29 +40,56 @@ body {
   background: white;
   text-align: center;
 }
-ul {
-  display: flex;
-  padding: 1.2%;
+/* responsive navbar css */
+
+.navbar {
+  font-size: 18px;
+  background-color: rgb(34, 64, 80);;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 10px;
 }
 
-li {
-  list-style: none;
-  margin-left: 200px;
+.main-nav {
+  list-style-type: none;
+  display: none;
 }
 
-a {
+.nav-links,
+.logo {
   text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
 }
 
-.nav-Title {
-  background-color: #f3f3f3;
+.main-nav li {
+  text-align: center;
+  margin: 15px auto;
+}
+
+.logo {
+  display: inline-block;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.logo img {
+  height: auto;
+  width: auto;
+  max-height: 72px;
+  max-width: 250px;
+}
+
+.navbar-toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 24px;
+}
+
+.active {
   display: block;
-  padding: 30px 15px;
-}
-
-.nav-title h2 {
-  display: inline;
-  font-size: 25px;
 }
 
 /* contact form css */
@@ -248,6 +275,7 @@ input[type="submit"]:hover {
 .wrap {
   background: rgb(34, 64, 80);
   padding: 5rem;
+
   /* display: flex; */
   width: 100%;
 }
@@ -402,17 +430,41 @@ input[type="submit"]:hover {
   padding: 5rem;
 }
 
-.media {
-}
+/* Navbar media query */
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+  }
 
-/* media query */
+  .main-nav {
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
 
-/* Responsive */
+  .main-nav li {
+    margin: 0;
+  }
 
+  .nav-links {
+    margin-left: 40px;
+  }
 
+  .logo {
+    margin-top: 0;
+  }
 
+  .navbar-toggle {
+    display: none;
+  }
 
-@media (max-width: 800px) {
-  body {
+  .logo:hover,
+  .nav-links:hover {
+    color: rgba(255, 255, 255, 1);
   }
 }
