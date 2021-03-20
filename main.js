@@ -20,7 +20,7 @@ images[2] = "css/img/img3.jpg";
 function imgChange(){
   
   let slide = document.querySelector(".hero-img img"); 
-console.log(slide.src);
+
  
   
 	slide.src =images[i];
@@ -35,6 +35,8 @@ console.log(slide.src);
 
 
 window.onload=imgChange;
+
+
 
 
 

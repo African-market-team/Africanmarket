@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .home {
@@ -380,4 +380,39 @@ input[type="submit"]:hover {
   margin-top: 2rem;
   width: 100%;
   text-align: justify;
+}
+
+.fcontainer {
+  width: 100%;
+
+  color: white;
+}
+
+.submedia {
+  width: 100%;
+  background: rgba(173, 216, 230, 0.568);
+  padding: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.info {
+  width: 100%;
+  background-color: rgba(84, 144, 178, 0.87);
+  padding: 5rem;
+}
+
+.media {
+}
+
+/* media query */
+
+/* Responsive */
+
+
+
+
+@media (max-width: 800px) {
+  body {
+  }
 }
