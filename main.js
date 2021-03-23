@@ -1,5 +1,6 @@
 
 
+/* hero images */
 var i = 0; 			
 var images = [];	
 	
@@ -10,9 +11,6 @@ images[0] = "css/img/img1.jpg";
 images[1] = "css/img/img2.jpg";
 
 images[2] = "css/img/img3.jpg";
-
-
-
 
 
 
@@ -36,6 +34,15 @@ function imgChange(){
 
 window.onload=imgChange;
 
+
+/* navbar responsive*/
+
+let mainNav = document.getElementById("js-menu");
+let navBarToggle = document.getElementById("js-navbar-toggle");
+
+navBarToggle.addEventListener("click", function() {
+  mainNav.classList.toggle("active");
+});
 
 
 /* navbar responsive*/
