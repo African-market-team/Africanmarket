@@ -1,7 +1,60 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* END RESET */
+
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+
 }
 
 body {
@@ -37,7 +90,7 @@ body {
   margin: auto;
 }
 body {
-  background: white;
+  background: rgba(255, 255, 255, 0.7);
   text-align: center;
 }
 /* responsive navbar css */
@@ -92,7 +145,7 @@ body {
   display: block;
 }
 
-/* contact form css */
+/* HOME PAGE CSS*/
 .showCase {
   position: relative;
 }
@@ -112,32 +165,33 @@ body {
 
 .hero-img {
   width: 100%;
-}
-
-.hore-text {
-  position: absolute;
-  width: 80%;
-  margin-left: 10%;
-  height: 83.5vh;
-  background: rgba(0, 0, 0, 0.192);
-}
-.boldtext {
-  position: absolute;
-  top: 30%;
-  left: 30%;
-  width: 30%;
-  color: whitesmoke;
-  font-size: 259%;
-  background-color: rgba(0, 0, 0, 0.198);
-}
-
-.discription {
-  color: white;
-  margin-top: 30rem;
-  width: 30%;
-  margin-left: 29rem;
-  line-height: 3rem;
-  text-align: justify;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  }
+  
+  .hore-text {
+    position: absolute;
+    width: 80%;
+    margin-left: 10%;
+    height: 83.5vh;
+    background: rgba(0, 0, 0, 0.192);
+  }
+  .boldtext {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    width: 30%;
+    color: whitesmoke;
+    font-size: 259%;
+    background-color: rgba(0, 0, 0, 0.198);
+  }
+  
+  .discription {
+    color: white;
+    margin-top: 30rem;
+    width: 30%;
+    margin-left: 29rem;
+    line-height: 3rem;
+    text-align: justify;
 }
 .btn {
   background-color: rgba(0, 0, 0, 0.883);
@@ -161,6 +215,8 @@ body {
   margin: auto;
 }
 
+/* CONTACT US CSS */
+
 .contactus {
   display: flex;
   flex-direction: column;
@@ -181,6 +237,7 @@ body {
   margin-left: 11rem;
   padding: 15px;
 }
+
 
 input[type="text"],
 select,
@@ -276,7 +333,7 @@ input[type="submit"]:hover {
   background: rgb(34, 64, 80);
   padding: 5rem;
 
-  /* display: flex; */
+ display: flex; 
   width: 100%;
 }
 
@@ -314,16 +371,21 @@ input[type="submit"]:hover {
   line-height: 2rem;
   font-size: 1.2rem;
 }
+.aprroach h1 {
+  color: rgb(215, 84, 64);
+  font-weight: bold;
+
+}
 .aprroach p {
   margin-top: 2rem;
   text-align: justify;
 }
-
+/* home-page hero img css */
 .arrow {
   color: #000;
 }
 
-/* home-page css */
+
 .ourservicr {
   margin-top: 5rem;
 }
@@ -336,6 +398,7 @@ input[type="submit"]:hover {
   justify-content: space-between;
   text-align: justify;
 }
+/* home-page body */
 
 .resaerch {
   width: 30%;
@@ -431,7 +494,25 @@ input[type="submit"]:hover {
 }
 
 /* Navbar media query */
+
+@media screen and (max-width : 1224px) {
+  
+    html {
+      font-size: 14px }
+
+    body {
+        background-color: yellowgreen;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  body {
+    background-color: blue;
+  }
+}
 @media screen and (min-width: 768px) {
+
+
   .navbar {
     display: flex;
     justify-content: space-between;
